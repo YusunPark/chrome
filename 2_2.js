@@ -32,8 +32,38 @@ window.addEventListener("click", handleClick);
 const age = prompt("How old are you");
 
 console.log(age);
-if (age > 18){
-  console.log('You can drink')
+if (age > 18) {
+  console.log("You can drink");
 } else {
-  console.log('You can not drink')
+  console.log("You can not drink");
 }
+
+// if-else 로 색상 변경하기
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OUTER_COLOR = "#ffda79";
+
+function handleClick() {
+  const currentColor = title.style.color;
+  if (currentColor === BASE_COLOR) {
+    title.style.color = OUTER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("mouseenter", handleClick);
+}
+
+init();
+
+// 다양한 MDN
+function handleOffline() {
+  console.log("와이파이 꺼졌당");
+}
+function handleOnline() {
+  console.log("와이파이 연결됨!");
+}
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
