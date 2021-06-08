@@ -1,33 +1,38 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
-    toDoInput = toDoForm.querySelector("input"),
-    toDoList = document.querySelector(".js-toDoList");
+  toDoInput = toDoForm.querySelector("input"),
+  toDoList = document.querySelector(".js-toDoList");
 
-const TODOS_LS = 'toDos'
+const TODOS_LS = "toDos";
 
 function paintToDo(text) {
-    // toDoList.classList.add(text);
-    console.log(text);
+  const li = document.createElement("li");
+  const delBtn = document.createElement("button");
+  const span = document.createElement("span");
+  delBtn.innerHTML = "❌";
+  span.innerText = text;
+
+  li.appendChild(span);
+  li.appendChild(delBtn);
+  toDoList.appendChild(li);
 }
 
 function handleSubmit(event) {
-    event.preventDefault();
-    console.log(event);
-    const currentValue = toDoInput.value;
-    paintToDo(currentValue);
-    toDoInput.value = "";
+  event.preventDefault();
+  console.log(event);
+  const currentValue = toDoInput.value;
+  paintToDo(currentValue);
+  toDoInput.value = "";
 }
-
 
 function loadToDos() {
-    const toDos = localStorage.getItem(TODOS_LS);
-    if(toDos !== null) {
-    } 
+  const toDos = localStorage.getItem(TODOS_LS);
+  if (toDos !== null) {
+  }
 }
 
-
 function init() {
-    loadToDos();
-    toDoForm.addEventListener("submit", handleSubmit);
+  loadToDos();
+  toDoForm.addEventListener("submit", handleSubmit);
 }
 
 init();
