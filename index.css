@@ -1,6 +1,6 @@
 body {
-    background-color: #2c3e50;
-    color: azure;
+  background-color: #2c3e50;
+  color: azure;
 }
 
 .form,
@@ -39,10 +39,26 @@ body {
 }
 
 .main {
-  display:flex;
+  display: flex;
   /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.js-toDoForm input {
+  flex: 1;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid azure;
+}
+
+.js-toDoList {
+  display: display;
+  background-color: black;
+  align-items: center;
+  user-select: none;
 }
