@@ -12,6 +12,19 @@ body {
   display: block;
 }
 
+.main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; */
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 512px;
+  /* background: rgb(122, 95, 95); */
+
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -32,31 +45,42 @@ body {
   opacity: 0.85;
 }
 
+.js-clock {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
 .js-weather {
   position: absolute;
   top: 1rem;
   right: 2rem;
 }
 
-.main {
+.js-toDoForm {
   display: flex;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: 2rem;
+
 }
 
-.js-toDoForm input {
+input {
   flex: 1;
   font-size: 1.25rem;
   outline: none;
   border: none;
+  color: azure;
   background-color: transparent;
   border-bottom: 2px solid azure;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+::placeholder {
+  color: azure;
 }
 
 .js-toDoList {
+  margin: 2rem;
+
   display: display;
   background-color: black;
   align-items: center;
