@@ -13,16 +13,12 @@ body {
 }
 
 .main {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; */
-  margin: 0 auto;
   margin-top: 4rem;
-  width: 512px;
-  /* background: rgb(122, 95, 95); */
+}
 
+.main-list{
+  width: 512px;
+  margin: 0 auto;
 }
 
 @keyframes fadeIn {
