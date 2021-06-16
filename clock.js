@@ -1,5 +1,5 @@
 const clockContainer = document.querySelector(".js-clock");
-const clockTitle = clockContainer.querySelector("h1"); 
+const clockTitle = clockContainer.querySelector("span"); 
 
 
 // 현재 시각을 알려준다. 

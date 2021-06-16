@@ -12,13 +12,13 @@ body {
   display: block;
 }
 
-.main {
-  margin-top: 4rem;
-}
 
-.main-list{
+.main{
   width: 512px;
   margin: 0 auto;
+  margin-top: 3.5rem;
+  text-align: center;
+
 }
 
 @keyframes fadeIn {
@@ -42,8 +42,7 @@ body {
 }
 
 .js-clock {
-  text-align: center;
-  font-size: 1.25rem;
+  font-size: 3rem;
 }
 
 .js-weather {
@@ -76,9 +75,21 @@ input {
 
 .js-toDoList {
   margin: 2rem;
-
+  text-align: left;
   display: display;
-  background-color: black;
+  /* background-color: black; */
   align-items: center;
   user-select: none;
+}
+
+.check-mark {
+  font-size: 1.5rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  color: #3bc9db;
+  font-weight: 800;
+}
+
+li {
+  display: flex;
 }
