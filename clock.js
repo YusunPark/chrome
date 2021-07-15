@@ -21,3 +21,5 @@ function init() {
 }
 
 init();
+
+//pad 사용해보기
